@@ -101,7 +101,7 @@ void HelloWorld::spriteMoveFinished(CCNode* sender){
 		_targets->removeObject(pSprite);
 		GameOverScene* gameOverScene = GameOverScene::create();
 		CCScene* endScene = CCScene::create();
-		gameOverScene->getLabel()->setString("You Lose");
+		gameOverScene->getLabel()->setString("You Lose :(");
 		endScene->addChild(gameOverScene);
 		CCDirector::sharedDirector()->replaceScene(endScene);
 	}else if (pSprite->getTag()==2){
